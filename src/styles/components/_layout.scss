@@ -9,3 +9,20 @@
         gap: 1.6rem;
     }
 }
+
+.gallery {
+    .section_heading {
+        margin-bottom: 2.5rem;
+    }
+
+    &__content {
+        display: flex;
+        gap: 1.6rem;
+    }
+
+    &__item {
+        img {
+            width: 100%;
+        }
+    }
+}

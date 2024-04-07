@@ -3,6 +3,7 @@ import ClubHeader from './clubHeader';
 import ClubTabs from './clubTabs';
 import Services from '../../sections/services';
 import Events from '../../sections/events';
+import Gallery from '../../sections/gallery';
 
 function Club() {
   return (
@@ -12,6 +13,7 @@ function Club() {
       <div className='club__content'>
         <Services />
         <Events />
+        <Gallery />
       </div>
     </main>
   );
