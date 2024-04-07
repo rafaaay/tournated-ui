@@ -31,7 +31,7 @@ function EventCard(props) {
 
             <div className='event__instructor'>
                 <div className='instructor'>
-                    <img src='./club/img_usa.svg' alt='usa flag picture' />
+                    <img src='./club/img_event-avatar.svg' alt='usa flag picture' />
                     <span>Courtney Lewis</span>
                 </div>
 
