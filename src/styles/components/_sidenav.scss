@@ -1,0 +1,45 @@
+.sidenav {
+    padding: 2rem 2.4rem;
+    max-width: 28.8rem;
+    min-height: 100dvh;
+    border: 1px solid var(--clr-light-300);
+    display: flex;
+    flex-direction: column;
+
+    &.closed {
+        span {
+            display: none;
+        }
+    }
+
+    &__header {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    &__link {
+        font-size: var(--fs-400);
+        color: var(--clr-dark-300);
+        font-weight: 500;
+        padding: 1rem 1.2rem;
+        border-radius: 0.6rem;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        &.active {
+            color: var(--clr-light);
+            background-color: var(--clr-brand);
+        }
+    }
+
+    &__footer {
+        margin-top: auto;
+    }
+}

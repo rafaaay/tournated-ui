@@ -1,0 +1,43 @@
+:root {
+    --clr-brand: hsla(11, 100%, 60%, 1);
+
+    --clr-light: hsla(0, 0%, 100%, 1);
+    --clr-light-300: hsla(240, 3%, 94%, 1);
+    --clr-light-500: hsla(0, 0%, 93%, 1);
+    --clr-light-600:  hsla(0, 0%, 98%, 1);
+    --clr-light-700: hsla(215, 35%, 95%, 1);
+
+    --clr-dark: hsla(210, 73%, 15%, 1);
+    --clr-dark-200: hsla(216, 12%, 57%, 1);
+    --clr-dark-300: hsla(210, 21%, 33%, 1);
+    
+    --fs-400: 1.4rem;
+}
+
+@import "./abstract/variables";
+@import "./abstract/mixins";
+
+@import "./base/normalize";
+@import "./base/base";
+@import "./base/typography";
+
+// components
+@import "./components/sidenav";
+@import "./components/buttons";
+@import "./components/atoms";
+@import "./components/card";
+@import "./components/layout";
+@import "./components/header";
+
+@import "./pages/club";
+
+
+.layout {
+    display: flex;
+}
+
+.content {
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--clr-light-600);
+}
