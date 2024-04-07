@@ -1,40 +1,11 @@
-.section {
-    margin-bottom: 4rem;
-}
+.events {
+    .section_heading {
+        margin-bottom: 2.5rem;
+    }
 
-.topStories {
-    .grid {
+    &__content {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 3rem;
-    }
-
-    .section-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 4rem;
-    }
-}
-
-.trendingStories {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 3rem;
-    }
-}
-
-.destinations {
-    .slider {
-        display: flex;
-        gap: 2rem;
-        overflow: auto;
-        -ms-overflow-style: none; 
-            scrollbar-width: none; 
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.6rem;
     }
 }

@@ -1,0 +1,18 @@
+.services {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid hsla(240, 3%, 94%, 1);
+    
+    .section_heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .tabs {
+        margin-bottom: 1.5rem;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.6rem;
+    }
+}

@@ -1,0 +1,33 @@
+.tabs {
+    display: flex;
+    gap: 0.8rem;
+    border-bottom: 1px solid hsla(240, 3%, 94%, 1);
+    background-color: var(--clr-light);
+    padding: 0 3.2rem;
+
+    .tab {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.4rem 1rem 0.8rem 1rem;
+        color: var(--clr-dark-200);
+        font-weight: 500;
+
+        &.active {
+            background: -webkit-linear-gradient(99.53deg, #FF5733 0.25%, #FD4C26 46.18%, #FA8D76 97.15%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+
+            &::after {
+                content: "";
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: -webkit-linear-gradient(99.53deg, #FF5733 0.25%, #FD4C26 46.18%, #FA8D76 97.15%);
+            }
+        }
+    }
+}

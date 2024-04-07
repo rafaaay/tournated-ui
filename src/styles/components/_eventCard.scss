@@ -1,0 +1,40 @@
+.event {
+    border: 1px solid hsla(215, 35%, 95%, 1);
+    background-color: var(--clr-light);
+    padding: 1.6rem 1.9rem;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    &__header-content {
+        display: flex;
+        gap: 1.2rem;
+    }
+
+    &__icon {
+        align-self: flex-start;
+    }
+
+    &__tags {
+        display: flex;
+        gap: 1rem;
+        font-size: var(--fs-300);
+        line-height: 2.4rem;
+        margin-top: 1rem;
+
+        span {
+            padding: 0 0.8rem;
+            background: hsla(142, 58%, 94%, 1);
+            border-radius: 4px;
+        }
+    }
+
+    &__address {
+        display: flex;
+        gap: 1.2rem;
+        font-size: var(--fs-300);
+    }
+}

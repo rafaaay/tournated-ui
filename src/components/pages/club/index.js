@@ -1,18 +1,18 @@
 import React from 'react';
+import ClubHeader from './clubHeader';
+import ClubTabs from './clubTabs';
+import Services from '../../sections/services';
+import Events from '../../sections/events';
 
 function Club() {
   return (
     <main className='club'>
-      <section className='club__header'>
-        <div className='info'>
-          <div className='picture'>
-            <img src='./club/img_club.png' alt='club picture' />
-            <span>Academy</span>
-          </div>
-        </div>
-
-        <div className='tags'></div>
-      </section>
+      <ClubHeader />
+      <ClubTabs />
+      <div className='club__content'>
+        <Services />
+        <Events />
+      </div>
     </main>
   );
 }

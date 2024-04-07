@@ -1,3 +1,125 @@
 .club {
     background-color: var(--clr-light-600);
+    height: calc(100dvh - 8.3rem);
+    overflow: auto;
+
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .services, .events {
+        margin-bottom: 4.5rem;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        background-image: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), 
+        url(../../../public/club/img_background.jpg);
+        background-repeat: no-repeat;
+        padding: 20.8rem 2.9rem 3.2rem 2.9rem;
+    }
+
+    .info {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .picture {
+        position: relative;
+
+        span {
+            position: absolute;
+            left: 50%;
+            bottom: -1.2rem;
+            transform: translateX(-50%);
+            padding: 0 0.8rem;
+            line-height: 2.4rem;
+            font-size: var(--fs-300);
+            background-color: hsla(144, 56%, 93%, 1);
+            border: 2px solid hsla(0, 0%, 98%, 1);
+            border-radius: 4px;
+            display: inline-block;
+        }
+    }
+
+    .text {
+        h1 {
+            margin-bottom: 0.3rem;
+        }
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        margin-bottom: 1rem;
+
+        a {
+            color: var(--clr-brand);
+            border: 1px solid var(--clr-brand);
+            border-radius: 0.4rem;
+            padding: 0.5rem 0.8rem;
+            font-weight: 500;
+        }
+    }
+
+    .timings {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 0.8rem;
+        border: 1px solid hsla(215, 35%, 95%, 1);
+        border-radius: 0.4rem;
+        font-size: var(--fs-300);
+
+        .status {
+            font-weight: 600;
+            color: var(--clr-green);
+            padding-right: 0.6rem;
+            margin-right: 0.6rem;
+            border-right: 1px solid hsla(210, 73%, 15%, 0.35);
+        }
+
+        .time {
+            font-weight: 500;
+            margin-right: 0.6rem;
+        }
+    }
+
+    .tags {
+        max-width: 42.9rem;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        &__pill {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.2rem 0.8rem;
+            border: 1px solid hsla(210, 73%, 15%, 0.1);
+            background-color: hsla(210, 73%, 15%, 0.1);
+            white-space: nowrap;
+        }
+
+        &__view-all a {
+            color: hsla(210, 73%, 15%, 0.35);
+        }
+    }
+
+    &__content {
+        padding: 4.5rem 3.2rem;
+
+        .tabs {
+            padding: 0;
+            background-color: transparent;
+        }
+    }
 }

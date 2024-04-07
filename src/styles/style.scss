@@ -10,8 +10,14 @@
     --clr-dark: hsla(210, 73%, 15%, 1);
     --clr-dark-200: hsla(216, 12%, 57%, 1);
     --clr-dark-300: hsla(210, 21%, 33%, 1);
-    
+
+    --clr-green: hsla(133, 57%, 45%, 1);
+
+    --fs-300: 1.2rem;
     --fs-400: 1.4rem;
+    --fs-500: 2rem;
+    --fs-600: 2.4rem;
+    --fs-700: 2.8rem;
 }
 
 @import "./abstract/variables";
@@ -24,10 +30,13 @@
 // components
 @import "./components/sidenav";
 @import "./components/buttons";
-@import "./components/atoms";
-@import "./components/card";
 @import "./components/layout";
 @import "./components/header";
+@import "./components/tabs";
+@import "./components/serviceCard";
+@import "./components/eventCard";
+
+@import "./sections/services";
 
 @import "./pages/club";
 
