@@ -26,3 +26,23 @@
         }
     }
 }
+
+.gallery {
+    margin-bottom: 4.5rem;
+
+    .section_heading {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.coaches {
+    .section_heading {
+        margin-bottom: 2.5rem;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.6rem;
+    }
+}

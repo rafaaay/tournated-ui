@@ -4,6 +4,7 @@ import ClubTabs from './clubTabs';
 import Services from '../../sections/services';
 import Events from '../../sections/events';
 import Gallery from '../../sections/gallery';
+import Coaches from '../../sections/coaches';
 
 function Club() {
   return (
@@ -14,6 +15,7 @@ function Club() {
         <Services />
         <Events />
         <Gallery />
+        <Coaches />
       </div>
     </main>
   );

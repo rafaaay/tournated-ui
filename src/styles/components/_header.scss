@@ -1,6 +1,7 @@
 .header {
     background-color: var(--clr-light);    
     padding: 2.6rem 3rem;
+    border-bottom: 1px solid hsla(240, 3%, 94%, 1);
 
     &__content {
         display: flex;
